@@ -97,4 +97,71 @@ pre {
 
 .json-null {
   color: #808080;
+}
+
+.json-bracket {
+  color: #333333;
+  font-weight: bold;
+}
+
+/* ES语法建议样式 */
+.es-suggestions {
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 2px;
+}
+
+.es-suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.es-suggestion-item:hover,
+.es-suggestion-item:focus {
+  background-color: #f8f9fa;
+}
+
+.es-suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.suggestion-value {
+  font-weight: bold;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+  color: #7b61ab;
+}
+
+.suggestion-description {
+  color: #6c757d;
+  font-size: 0.85em;
+  margin-left: 10px;
+}
+
+/* 用于美化JSON输入框 */
+.form-control.json-editor:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* 增加Tooltip样式 */
+[title] {
+  position: relative;
+  cursor: help;
+}
+
+/* 为格式化与模板按钮增加反馈样式 */
+.btn-outline-secondary:active {
+  transform: translateY(1px);
 } 
